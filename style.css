@@ -4,12 +4,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    background-color: #2c2c2c; 
-    color: #f5f5f5; 
+    background-color: #f5f5f5; 
+    color: #333; 
 }
 
 header {
-    background-color: #e91e63; 
+    background-color: #852020;
     color: white;
     padding: 20px;
     text-align: center;
@@ -17,7 +17,9 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
 }
 
 #searchInput {
@@ -25,14 +27,14 @@ header h1 {
     margin: 10px 0;
     width: 80%;
     max-width: 400px;
-    border: 1px solid #f48fb1;
-    background-color: #333; 
-    color: #f5f5f5; 
+    border: 1px solid #852020; 
+    background-color: #fff; 
+    color: #333; 
 }
 
 #addRecipeBtn, #saveSelectedBtn {
     padding: 10px 20px;
-    background-color: #e91e63; 
+    background-color: #852020; 
     color: white;
     border: none;
     cursor: pointer;
@@ -42,7 +44,28 @@ header h1 {
 }
 
 #addRecipeBtn:hover, #saveSelectedBtn:hover {
-    background-color: #c2185b; 
+    background-color:#c55b5b; 
+}
+
+#feedbackBtn {
+    padding: 10px 20px;
+    background-color: #852020; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+#feedbackBtn:hover {
+    background-color: #c55b5b; 
+}
+
+#feedbackBtn a {
+    color: white;
+    text-decoration: none; 
 }
 
 main {
@@ -50,20 +73,20 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-    max-height: calc(100vh - 180px); 
+    max-height: calc(100vh - 180px);
     overflow-y: auto;
 }
 
 .menu-item {
     position: relative;
     padding: 15px;
-    border: 1px solid #444;
+    border: 1px solid #ddd; 
     border-radius: 5px;
     margin: 10px;
-    background-color: #333;
+    background-color: #fff; 
     transition: background-color 0.3s ease, transform 0.3s ease;
     width: 250px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -80,7 +103,7 @@ main {
 .menu-item h3 {
     margin: 10px 0;
     font-size: 1.2em;
-    color: #e91e63; 
+    color: #852020; 
 }
 
 .menu-item .price,
@@ -89,26 +112,26 @@ main {
 .menu-item .ingredients,
 .menu-item .instructions {
     font-size: 0.9em;
-    color: #f5f5f5; 
+    color: #333; 
     margin: 5px 0;
 }
 
 .menu-item .price {
     font-weight: bold;
-    color: #f5f5f5; 
 }
 
 .menu-item .discount {
-    color: #f48fb1;
+    color: #852020; 
     font-weight: bold;
 }
 
 .menu-item .offer {
-    background-color: #f48fb1; 
+    background-color: #852020; 
     color: white;
     padding: 5px;
     border-radius: 3px;
     font-size: 0.9em;
+    
 }
 
 .menu-item i {
@@ -116,12 +139,12 @@ main {
 }
 
 .menu-item:hover {
-    background-color: #444;
+    background-color: #c55b5b; 
     transform: translateY(-5px);
 }
 
 .remove-recipe {
-    background-color: #e91e63; 
+    background-color: #852020; 
     color: white;
     border: none;
     padding: 8px 12px;
@@ -136,7 +159,7 @@ main {
 }
 
 .remove-recipe:hover {
-    background-color: #c2185b; 
+    background-color: #852020; 
     transform: scale(1.05);
 }
 
@@ -154,10 +177,10 @@ main {
 }
 
 .modal-content {
-    background-color: #333;
+    background-color: #fff;
     margin: 5% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #ddd; 
     width: 80%;
     max-width: 500px;
     border-radius: 10px;
@@ -167,11 +190,11 @@ main {
 .modal-content h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #e91e63; 
+    color: #852020; 
 }
 
 #closeModal {
-    color: #aaa;
+    color: #333; 
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -179,7 +202,7 @@ main {
 
 #closeModal:hover,
 #closeModal:focus {
-    color: #fff;
+    color: #000; 
     text-decoration: none;
     cursor: pointer;
 }
@@ -193,16 +216,16 @@ main {
 #recipeForm textarea {
     margin-bottom: 15px;
     padding: 10px;
-    border: 1px solid #f48fb1; 
+    border: 1px solid #ddd; 
     border-radius: 5px;
     font-size: 1em;
-    background-color: #333; 
-    color: #f5f5f5; 
+    background-color: #fff; 
+    color: #333; 
 }
 
 #recipeForm button {
     padding: 10px;
-    background-color: #e91e63; 
+    background-color: #852020; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -211,11 +234,11 @@ main {
 }
 
 #recipeForm button:hover {
-    background-color: #c2185b; 
+    background-color: #852020; 
 }
 
 footer {
-    background-color: #e91e63; 
+    background-color:#852020; 
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -232,5 +255,68 @@ footer {
 
     #searchInput {
         width: 90%;
+    }
+}
+
+/* Responsive Design .*/
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #addRecipeBtn, #saveSelectedBtn, #feedbackBtn {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .menu-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #searchInput {
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+}
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .menu-item {
+        padding: 10px;
+    }
+
+    #recipeForm input[type="text"],
+    #recipeForm textarea {
+        font-size: 0.9em;
+    }
+
+    #recipeForm button {
+        font-size: 0.9em;
+    }
+
+    footer {
+        padding: 8px 0;
+        font-size: 0.9em;
     }
 }
