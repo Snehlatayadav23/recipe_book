@@ -16,12 +16,9 @@ Technologies Used
 HTML
 CSS
 JavaScript
-Installation
 
-Clone the repository:
-bash
-Copy code
-git clone (https://snehlatayadav23.github.io/recipe_book/)
+Project link (https://snehlatayadav23.github.io/recipe_book/)
+Source code  (https://github.com/Snehlatayadav23/recipe_book/tree/main)
 
 
 Usage
